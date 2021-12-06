@@ -3,7 +3,8 @@ package conditionalstatement;
 public class SwitchCase {
 
     public static void main(String[] args) {
-        String monthname = "October";
+
+        String monthname = "November";
 
         switch (monthname) {
             case "January":
