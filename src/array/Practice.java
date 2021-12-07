@@ -1,34 +1,41 @@
 package array;
 
+import java.util.ArrayList;
+
 public class Practice {
-    int empId;
-    String empName;
-    int empsalary;
-    String empDepart;
+    public static void main(String[] args) {
+        int[] arr2={10,20,30,40,50,60,70,80,90,100};
 
-     Practice(int Id, String Name, int salary, String Depart)
-    {
+        for (int i=0; i<arr2.length; i++){
+            if (arr2[i] % 3==0)
+            {
+                System.out.println(arr2[i]);
+                break;
+            }
+            else
+            {
+                System.out.println(arr2[i] + " is not multiple of 3");
+            }
 
-         empId=Id;
-         empName=Name;
-         empsalary=salary;
-         empDepart=Depart;
-    }
-    void display()
-    {
-        System.out.println(empId);
-        System.out.println(empName);
-        System.out.println(empsalary);
-        System.out.println(empDepart);
-    }
+            ArrayList<String> a=new ArrayList<>();
+            a.add("magan");
+            a.add("chhagan");
+            a.add("Gagan");
+            System.out.println(a.size());
+            System.out.println(a.get(1));
 
-    public static void main(String[] args)
-    {
-        Practice em1=new Practice(1234,"Raju",5000,"Account");
-        em1.display();
+        }
 
-        Practice em2=new Practice(5678,"Vinod",10000,"Marketing");
-        em2.display();
+
+
+
 
     }
+
 }
+
+
+
+
+
+
